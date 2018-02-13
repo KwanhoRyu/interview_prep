@@ -11,7 +11,7 @@
 ###############################
 
 from queue import Queue
-from linked_list import Linked_list, Node
+from linked_list import Linked_list, NodeForPrimitiveDataTypes, LinkedListNode
 
 class PriorityQueue (Queue):
 	def __init__ (self, key_name):
@@ -19,7 +19,7 @@ class PriorityQueue (Queue):
 		self.key_name = key_name
 
 	def push (self, value): 
-		new_node = Node(value)
+		new_node = LinkedListNode(value)
 
 		curr_node = self.head.next
 
@@ -40,7 +40,6 @@ class PriorityQueue (Queue):
 			curr_node = curr_node.next
 
 		Queue.add_to_tail(self, value)
-
 
 	def pop_min (self):
 		return Linked_list.remove_from_head(self)
@@ -64,7 +63,7 @@ def testcase_1():
 	new_input_list = []
 
 	for input in input_list:
-		new_input_list.append(Node(input))
+		new_input_list.append(NodeForPrimitiveDataTypes(input))
 
 	min_priority_queue = []
 	max_priority_queue = []

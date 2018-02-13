@@ -11,7 +11,7 @@
 # space complexity : O(n)
 ###############################
 
-class Node:
+class NodeForPrimitiveDataTypes:
 	def __init__ (self, value):
 		self.value = value
 
@@ -101,13 +101,13 @@ class Linked_list:
 def main():
 	LL = Linked_list()
 
-	LL.add_to_head(Node(1))
+	LL.add_to_head(NodeForPrimitiveDataTypes(1))
 	LL.remove_from_tail()
 	LL.remove_from_tail()  
-	LL.add_to_head(Node(2))
-	LL.add_to_tail(Node(7))
-	LL.add_to_head(Node(3))
-	LL.add_to_tail(Node(4))
+	LL.add_to_head(NodeForPrimitiveDataTypes(2))
+	LL.add_to_tail(NodeForPrimitiveDataTypes(7))
+	LL.add_to_head(NodeForPrimitiveDataTypes(3))
+	LL.add_to_tail(NodeForPrimitiveDataTypes(4))
 	LL.remove_from_tail()
 	print(LL.size)
 

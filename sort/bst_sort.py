@@ -17,7 +17,6 @@ class BST:
 	def __init__(self):
 		self.root = None
 
-
 	def insert(self, value):
 		new_node = Node(value)
 		if self.root == None:
@@ -26,9 +25,7 @@ class BST:
 
 		self.compare_and_insert(self.root, new_node)
 
-
 #	def remove ():
-
 
 	def compare_and_insert (self, current_node, new_node):
 		if current_node.value >= new_node.value:
@@ -67,7 +64,6 @@ def bst_sort (array):
 		bst.insert(x)
 
 	return bst.serialize()
-
 
 
 ################################################################################################################

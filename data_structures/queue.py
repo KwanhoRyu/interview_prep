@@ -10,7 +10,7 @@
 # space complexity : 
 ###############################
 
-from linked_list import Node, Linked_list
+from linked_list import NodeForPrimitiveDataTypes, Linked_list
 
 class Queue (Linked_list):
 	def __init__ (self):
@@ -35,7 +35,7 @@ def main():
 
 	input_list = []
 	for x in range (1, 10):
-		input_list.append(Node(x))
+		input_list.append(NodeForPrimitiveDataTypes(x))
 
 	output_list = []
 
